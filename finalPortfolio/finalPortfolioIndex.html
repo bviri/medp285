@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="shortcut icon" href="favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="navAndLogo.css">
+    
+    
+    <style>
+    
+    @keyframes fadeIn {
+  	0% { opacity: 0; }
+  	100% { opacity: 100%; }
+	}
+	
+	@keyframes topSlideIn {
+    0%   {left:30%; top:-300px;}
+    50%  {left:30%; top:400px;}
+    75%  {left:00%; top:400px;}
+    100% {left:0%; top:0px;}
+		}
+
+	
+	
+      body { 
+      background: url('indexBG.png') no-repeat;
+      background-size: cover;
+      }
+      
+
+      
+      .logo {
+      position: relative;
+      animation-name: topSlideIn;
+      animation delay: 0;
+      animation-iteration-count: 1;
+      animation-duration: 4s;
+      left:0%;
+      }
+      
+    nav ul { 
+      animation-name: fadeIn;
+      animation-iteration-count: 1;
+      animation-duration: 12s;
+      }
+      
+      .indeximg 
+      { position:relative;
+      animation-name: fadeIn;
+      animation-iteration-count: 1;
+      animation-duration: 8s;
+      margin-top: 5%;
+      margin-left: 0%;
+      text-align: center;
+      }
+      
+      .footer
+      { 
+      text-align: center; 
+      margin-top: 5%;
+      margin-left: -2%
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="logo"><img src="siteLogo.png"></div>
+    <nav id="nav">
+    
+      <ul>
+        <li><a href="http://fmundergrad.hunter.cuny.edu/~virib/medp285/finalPortfolio/finalPortfolioAbout.html">About</a></li>
+        <li><a href="http://fmundergrad.hunter.cuny.edu/~virib/medp285/finalPortfolio/finalPortfolioArtGallery.html">Art</a></li>
+        <li><a href="http://fmundergrad.hunter.cuny.edu/~virib/medp285/finalPortfolio/finalPortfolioProjects.html">Projects</a></li>
+        <li><a href="http://fmundergrad.hunter.cuny.edu/~virib/medp285/finalPortfolio/finalPortfolioContact.html">Contact</a></li>
+      </ul>
+    </nav>
+</div>
+
+<div class="indeximg">
+<img srcset="indexIMG.png 480w,
+             indexIMG.png  960w,
+             indexIMG.png  1280w" sizes="(max-width: 480px) 440px,
+            (max-width: 960px) 920px,
+            1280px" src="indexIMG.png " alt="Responsive IMG">
+</div>
+
+<div class="footer">
+Site (c) Beatrice Viri, 2018
+</div>
+
+  </body>
+</html>
